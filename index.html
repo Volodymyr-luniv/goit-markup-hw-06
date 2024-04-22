@@ -21,7 +21,7 @@
 	</head>
 	<body>
 		<!--HEADER-->
-		<header class="header">
+		<header class="header" data-mobil-open>
 			<div class="header-container container">
 				<nav class="header-navigation">
 					<a href="./index.html" class="logo header-logo"
@@ -947,62 +947,87 @@
 				</form>
 			</div>
 		</div>
-		<div class="mobil-menu">
-			<button class="mobil-button" type="button" data-modal-close>
-				<svg class="mobil-button-icon" width="8" height="8">
-					<use href="./images/sprite/icons.svg#icon-close"></use>
-				</svg>
-			</button>
-			<ul class="mobil-menu-list">
-				<li class="mobil-menu-item">Studio</li>
-				<li class="mobil-menu-item">Portfolio</li>
-				<li class="mobil-menu-item">Contacts</li>
-			</ul>
-			<address class="mobil-contact">
-				<ul class="mobil-contact-list">
-					<li class="mobil-contact-item">+11 (000) 111-11-11</li>
-					<li class="mobil-contact-item">info@devstudio.com</li>
+		<div class="mobil-menu mobil-container" data-mobil>
+			<div class="mobil-wrap">
+				<button class="mobil-button" type="button" data-mobil-close>
+					<svg class="mobil-button-icon" width="8" height="8">
+						<use href="./images/sprite/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="menu-list-wrap">
+					<ul class="mobil-menu-list">
+						<li class="mobil-menu-item">
+							<a
+								class="mobil-item-link mobil-current-link"
+								href="./index.html"
+								>Studio</a
+							>
+						</li>
+						<li class="mobil-menu-item">
+							<a class="mobil-item-link" href="">Portfolio</a>
+						</li>
+						<li class="mobil-menu-item">
+							<a class="mobil-item-link" href="">Contacts</a>
+						</li>
+					</ul>
+				</div>
+				<address class="mobil-contact">
+					<ul class="mobil-contact-list">
+						<li class="mobil-contact-item">
+							<a
+								class="mobil-contact-link mobil-current-link"
+								href=""
+								>+11 (000) 111-11-11</a
+							>
+						</li>
+						<li class="mobil-contact-item">
+							<a class="mobil-contact-link" href=""
+								>info@devstudio.com</a
+							>
+						</li>
+					</ul>
+				</address>
+				<ul class="list-social list-social-mobil">
+					<li class="item-social">
+						<a class="link-social" href="">
+							<svg class="icon-social" width="16" height="16">
+								<use
+									href="./images/sprite/icons.svg#icon-instagram"
+								></use>
+							</svg>
+						</a>
+					</li>
+					<li class="item-social">
+						<a class="link-social" href="#">
+							<svg class="icon-social" width="16" height="16">
+								<use
+									href="./images/sprite/icons.svg#icon-twitter"
+								></use>
+							</svg>
+						</a>
+					</li>
+					<li class="item-social">
+						<a class="link-social" href="#">
+							<svg class="icon-social" width="16" height="16">
+								<use
+									href="./images/sprite/icons.svg#icon-facebook"
+								></use>
+							</svg>
+						</a>
+					</li>
+					<li class="item-social">
+						<a class="link-social" href="#">
+							<svg class="icon-social" width="16" height="16">
+								<use
+									href="./images/sprite/icons.svg#icon-linkedin"
+								></use>
+							</svg>
+						</a>
+					</li>
 				</ul>
-			</address>
-			<ul class="list-social">
-				<li class="item-social">
-					<a class="link-social" href="">
-						<svg class="icon-social" width="16" height="16">
-							<use
-								href="./images/sprite/icons.svg#icon-instagram"
-							></use>
-						</svg>
-					</a>
-				</li>
-				<li class="item-social">
-					<a class="link-social" href="#">
-						<svg class="icon-social" width="16" height="16">
-							<use
-								href="./images/sprite/icons.svg#icon-twitter"
-							></use>
-						</svg>
-					</a>
-				</li>
-				<li class="item-social">
-					<a class="link-social" href="#">
-						<svg class="icon-social" width="16" height="16">
-							<use
-								href="./images/sprite/icons.svg#icon-facebook"
-							></use>
-						</svg>
-					</a>
-				</li>
-				<li class="item-social">
-					<a class="link-social" href="#">
-						<svg class="icon-social" width="16" height="16">
-							<use
-								href="./images/sprite/icons.svg#icon-linkedin"
-							></use>
-						</svg>
-					</a>
-				</li>
-			</ul>
+			</div>
 		</div>
+		<script src="./js/mobil.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

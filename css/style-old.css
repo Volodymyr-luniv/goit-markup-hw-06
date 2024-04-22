@@ -525,7 +525,7 @@ body {
 		visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-open {
+.is-open {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
@@ -729,4 +729,125 @@ body {
 
 .modal-form-btn:hover {
 	background-color: #404bbf;
+}
+
+/* ========================================================================================================================================================
+MOBIL MENU
+======================================================================================================================================================== */
+.mobil-container {
+	max-width: 320px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+
+.mobil-menu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 320px;
+	height: 640px;
+	background-color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open-mobil {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.mobil-wrap {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.mobil-button {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	fill: #2e2f42;
+	background-color: #e7e9fc;
+	width: 24px;
+	height: 24px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0;
+	cursor: pointer;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobil-button:hover,
+.mobil-button:focus {
+	fill: #fff;
+	background-color: #404bbf;
+	border: none;
+}
+
+.mobil-button-icon {
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-list-wrap {
+	flex: 1 1 auto;
+}
+
+.mobil-menu-list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 72px 0;
+}
+
+.mobil-item-link {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.111;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
+	color: #2e2f42;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobil-menu-link:focus {
+	color: #404bbf;
+}
+
+.mobil-contact {
+	padding: 24px 0;
+}
+
+.mobil-contact-item {
+	margin-bottom: 24px;
+}
+
+.mobil-contact-link {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: #434455;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobil-contact-link:focus {
+	color: #404bbf;
+}
+
+.mobil-current-link {
+	color: #404bbf;
+}
+
+.list-social-mobil {
+	justify-content: space-between;
+
+	padding: 24px 0 40px;
 }
